@@ -1,40 +1,47 @@
 /*All Pages*/
 body {
-  position: relative;
+  text-align: center;
 }
 
-.btn-circle {
-  width: 50px;
-  height: 50px;
-  line-height: 50px; 
-  padding: 0;
-  border-radius: 50%;
-  border-width: 2px;
-  border-color: black;
+.left {
+  text-align: left;
+}
+
+.img-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*End All Pages*/
 
 /*Main Page*/
 .main {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 /*End Main Page*/
 
 /*About Page*/
 .about {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 /*End About Page*/
 
 /*Portfolio Page*/
 .portfolio {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 /*End Portfolio Page*/
 
 /*Contact Page*/
 .contact {
-  padding-top: 75px;
+  padding-top: 50px;
 }
 /*End Contact Page*/
+
+/*Bottom Page*/
+.bottom {
+  padding-top: 50px;
+  padding bottom: 50px;
+}
+/*End Bottom Page*/
