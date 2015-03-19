@@ -11,7 +11,7 @@
 	    <title>Bryan Steiner</title>
 	</head>
 
-	<body>
+	<body data-spy="scroll" data-target="#about">
 		<!-- Navbar -->
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="container">
@@ -49,11 +49,13 @@
 		<!-- End Main Page -->
 
 		<!-- About Page -->
-		<div class="container about">
+		<div id="about" class="container about">
 			<div class="row">
 				<div class="">
-					<img class="img-responsive img-circle" src="http://placehold.it/150x150" alt="...">
-					<h1>About Me</h1>
+					<div class="page-header">
+						<img class="img-responsive img-circle" src="http://placehold.it/150x150" alt="...">
+						<h1>About Me</h1>
+					</div>
 					<p>
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non gravida urna, id aliquet odio. Donec feugiat lorem nec ultricies vulputate. Praesent nec arcu vestibulum, porta nibh vel, condimentum est. Sed rhoncus, nisl vitae vestibulum tristique, velit leo imperdiet eros, aliquam pellentesque ex enim a risus. Fusce dictum enim sed lacus hendrerit semper. Curabitur feugiat metus tortor, eget lobortis dui rutrum feugiat. Proin facilisis, quam ut bibendum posuere, velit nunc vestibulum lorem, vitae vehicula libero mi condimentum felis.
 					</p>
@@ -69,7 +71,9 @@
 		<div class="container portfolio">
 			<div class="row">
 				<div class="">
-					<h1>My Portfolio</h1>
+					<div class="page-header">
+						<h1>My Portfolio</h1>
+					</div>
 				</div>
 			</div>
 			<div class="row">
@@ -101,7 +105,9 @@
 		<div class="container contact">
 			<div class="row">
 				<div class="">
-					<h1>Contact Me</h1>
+					<div class="page-header">
+						<h1>Contact Me</h1>
+					</div>
 					<p>Like what you've seen so far? <br> Let's chat!</p>
 					<a href="#">contact@bryansteiner.com</a>
 					<form>
