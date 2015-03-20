@@ -13,6 +13,14 @@
         margin-right: auto;
     }
 
+    .btn-circle {
+        width: 50px;
+        height: 50px;
+        line-height: 50px; 
+        padding:0;
+        border-radius: 50%;
+        border-color: #adadad;
+    }
 /*End All Pages*/
 
 /*Media Queries*/
