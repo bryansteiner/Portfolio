@@ -1,74 +1,82 @@
 /*All Pages*/
-    body {
-        text-align: center;
-        font-family: Raleway, Arial, sans-serif;
-    }
+body {
+    text-align: center;
+    font-family: Lato, Arial, sans-serif;
+}
 
-    .left {
-        text-align: left;
-    }
+.left {
+    text-align: left;
+}
 
-    .img-center {
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    .btn-circle {
-        width: 50px;
-        height: 50px;
-        line-height: 50px; 
-        padding:0;
-        border-radius: 50%;
-        border-color: #adadad;
-    }
+.btn-circle {
+    width: 50px;
+    height: 50px;
+    line-height: 50px; 
+    padding:0;
+    border-radius: 50%;
+    border-color: #adadad;
+}
+
+a.btn-circle, a.normal{
+    color: black;
+}
+
+a.btn-circle:hover {
+    background-color: #e6e6e6;
+}
 /*End All Pages*/
 
 /*Media Queries*/
-    @media (max-width: 768px) {
+@media (max-width: 768px) {
 
-    }
+}
 
-    @media (min-width: 768px) and (max-width: 992px) { 
+@media (min-width: 768px) and (max-width: 992px) { 
 
-    }
+}
 
-    @media (min-width: 992px) and (max-width: 1200px) { 
+@media (min-width: 992px) and (max-width: 1200px) { 
 
-    }
+}
 
-    @media (min-width: 1200px) {
+@media (min-width: 1200px) {
 
-    }
+}
 /*End Media Queries*/
 
 /*Main Page*/
-    .main {
-        padding-top: 75px;
-    }
+.main {
+    padding-top: 75px;
+}
 /*End Main Page*/
 
 /*About Page*/
-    .about {
-        padding-top: 75px;
-    }
+.about {
+    padding-top: 75px;
+}
 /*End About Page*/
 
 /*Portfolio Page*/
-    .portfolio {
-        padding-top: 75px;
-    }
+.portfolio {
+    padding-top: 75px;
+}
 /*End Portfolio Page*/
 
 /*Contact Page*/
-    .contact {
-        padding-top: 75px;
-    }
+.contact {
+    padding-top: 75px;
+}
 /*End Contact Page*/
 
 /*Bottom Page*/
-    .bottom {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
+.bottom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
 /*End Bottom Page
