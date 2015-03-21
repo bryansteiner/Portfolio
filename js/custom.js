@@ -41,7 +41,7 @@ $("#main a[href^='#']").on('click', function(e) {
 });
 
 // Contact Button Smooth Scroll
-$("#contact a[href^='#']").on('click', function(e) {
+$("#bottom a[href^='#']").on('click', function(e) {
 
    // prevent default anchor click behavior
    e.preventDefault();
