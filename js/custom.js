@@ -16,7 +16,6 @@ $("#navbar a[href^='#']").on('click', function(e) {
        // (default click behaviour)
        window.location.hash = hash;
      });
-
 });
 
 // Main Button Smooth Scroll
@@ -37,7 +36,6 @@ $("#main a[href^='#']").on('click', function(e) {
        // (default click behaviour)
        window.location.hash = hash;
      });
-
 });
 
 // Contact Button Smooth Scroll
@@ -58,5 +56,4 @@ $("#contact a[href^='#']").on('click', function(e) {
        // (default click behaviour)
        window.location.hash = hash;
      });
-
 });
