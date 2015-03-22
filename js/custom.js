@@ -102,6 +102,3 @@ $("#bottom a[href^='#']").on('click', function(e) {
      });
 });
 // End Contact Button Smooth Scroll
-
-
-
