@@ -17,22 +17,14 @@ body {
     font-family: Roboto Slab, Arial, sans-serif;
 }
 
-.social {
-    font-size: 30px;
-}
-
 .left {
     text-align: left;
 }
 
-.img-center {
+.center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.btn-scroll {
-    margin-top: 25px;
 }
 
 .btn-circle {
@@ -44,15 +36,21 @@ body {
     border-color: #adadad;
 }
 
-a.btn-circle, a.normal{
+.btn-scroll {
+    margin-top: 25px;
+}
+
+.btn-social {
+    height: 48px;
+    width: 48px;
+    margin-top: 25px;
+}
+
+a.btn-scroll, a.normal {
     color: black;
 }
 
-a.social {
-    font-size: 18px;
-}
-
-a.btn-circle:hover {
+a.btn-scroll:hover {
     background-color: #e6e6e6;
 }
 /*End All Pages*/
@@ -87,7 +85,7 @@ a.btn-circle:hover {
 
 /*Bottom Page*/
 .bottom {
-    padding-top: 25px;
+    padding-top: 10px;
     padding-bottom: 10px;
 }
 /*End Bottom Page
