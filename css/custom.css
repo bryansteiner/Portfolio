@@ -32,6 +32,10 @@ body {
     margin-right: auto;
 }
 
+.btn-scroll {
+    margin-top: 25px;
+}
+
 .btn-circle {
     width: 50px;
     height: 50px;
@@ -53,24 +57,28 @@ a.btn-circle:hover {
 /*Main Page*/
 .main {
     padding-top: 75px;
+    padding-bottom: 75px;
 }
 /*End Main Page*/
 
 /*About Page*/
 .about {
     padding-top: 75px;
+    padding-bottom: 75px;
 }
 /*End About Page*/
 
 /*Portfolio Page*/
 .portfolio {
     padding-top: 75px;
+    padding-bottom: 75px;
 }
 /*End Portfolio Page*/
 
 /*Contact Page*/
 .contact {
     padding-top: 75px;
+    padding-bottom: 75px;
 }
 /*End Contact Page*/
 
