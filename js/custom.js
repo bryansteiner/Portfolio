@@ -102,3 +102,8 @@ $("#bottom a[href^='#']").on('click', function(e) {
      });
 });
 // End Contact Button Smooth Scroll
+
+// Tooltip
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})

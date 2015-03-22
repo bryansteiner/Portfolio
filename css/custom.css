@@ -1,8 +1,10 @@
 /*Media Queries*/
 @media (max-width: 768px) {
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) { 
+
 }
 
 @media (min-width: 992px) {
@@ -13,6 +15,10 @@
 body {
     text-align: center;
     font-family: Roboto Slab, Arial, sans-serif;
+}
+
+.social {
+    font-size: 30px;
 }
 
 .left {
@@ -40,6 +46,10 @@ body {
 
 a.btn-circle, a.normal{
     color: black;
+}
+
+a.social {
+    font-size: 18px;
 }
 
 a.btn-circle:hover {
