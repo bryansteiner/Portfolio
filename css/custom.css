@@ -17,6 +17,11 @@ body {
     font-family: Roboto Slab, Arial, sans-serif;
 }
 
+h1, p {
+    position: relative;
+    z-index: 1;
+}
+
 .left {
     text-align: left;
 }
@@ -25,6 +30,10 @@ body {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+.btn {
+    transition: background-color 0.75s;
 }
 
 .btn-circle {
@@ -41,9 +50,12 @@ body {
 }
 
 .btn-social {
-    height: 48px;
-    width: 48px;
+    height: 50px;
+    width: 50px;
     margin-top: 25px;
+    margin-right: 0px;
+    margin-left: 0px;
+    padding: 0;
 }
 
 a.btn-scroll, a.normal {
@@ -79,7 +91,7 @@ a.btn-scroll:hover {
 /*Contact Page*/
 .contact {
     padding-top: 75px;
-    padding-bottom: 25px;
+    padding-bottom: 15px;
 }
 /*End Contact Page*/
 
