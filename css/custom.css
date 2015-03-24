@@ -50,12 +50,7 @@ h1, p {
 }
 
 .btn-social {
-    height: 50px;
-    width: 50px;
     margin-top: 25px;
-    margin-right: 0px;
-    margin-left: 0px;
-    padding: 0;
 }
 
 a.btn-scroll, a.normal {
