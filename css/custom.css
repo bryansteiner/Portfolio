@@ -17,9 +17,9 @@ body {
     font-family: Roboto Slab, Arial, sans-serif;
 }
 
-h1, p {
-    position: relative;
-    z-index: 1;
+canvas {
+    padding: 0px;
+    margin: 0px;
 }
 
 .left {
@@ -27,6 +27,7 @@ h1, p {
 }
 
 .center {
+    text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -57,7 +58,7 @@ a.btn-scroll, a.normal {
     color: black;
 }
 
-a.btn-scroll:hover {
+a.btn-scroll:hover, a.btn-social:hover {
     background-color: #e6e6e6;
 }
 /*End All Pages*/
