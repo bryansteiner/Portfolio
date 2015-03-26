@@ -255,7 +255,7 @@
 // Bar Graphs
   // Bar Graph Empty
   var barEmpty = {
-    labels : ["A. Davis","L. James","J. Harden","R. Westbrook"],
+    labels : ["Kevin Love","Lebron James","Carmelo Anthony","Kevin Durant"],
     datasets : [
       {
         fillColor : "rgba(220,220,220,0.5)",
@@ -269,7 +269,7 @@
 
   // Bar Graph Portfolio
   var barData = {
-    labels : ["A. Davis","L. James","J. Harden","R. Westbrook"],
+    labels : ["Kevin Love","Lebron James","Carmelo Anthony","Kevin Durant"],
     datasets : [
       {
         fillColor : "rgba(220,220,220,0.5)",
