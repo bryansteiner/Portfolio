@@ -152,7 +152,7 @@
         showTooltips: false
       });
     }
-  }, {offset: '75%'});
+  }, {offset: '50%'});
 
   $('#piechart1').waypoint(function(direction) {
     if (direction == "up") {
