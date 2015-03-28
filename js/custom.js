@@ -252,10 +252,10 @@
   }, {offset: '100%'});
 // End Pie Charts
 
-// Bar Graphs
-  // Bar Graph Empty
+// Bar Charts
+  // Bar Chart Empty
   var barEmpty = {
-    labels : ["Kevin Love","Lebron James","Carmelo Anthony","Kevin Durant"],
+    labels : ["K. Love","L. James","C. Anthony","K. Durant"],
     datasets : [
       {
         fillColor : "rgba(220,220,220,0.5)",
@@ -267,9 +267,9 @@
     ]
   }
 
-  // Bar Graph Portfolio
+  // Bar Chart Portfolio
   var barData = {
-    labels : ["Kevin Love","Lebron James","Carmelo Anthony","Kevin Durant"],
+    labels : ["K. Love","L. James","C. Anthony","K. Durant"],
     datasets : [
       {
         fillColor : "rgba(220,220,220,0.5)",
@@ -291,8 +291,6 @@
         animationSteps: 100,
         // String - Animation easing effect
         animationEasing: "easeOutQuart",
-        // Boolean - Determines whether to draw tooltips on the canvas or not
-        showTooltips: true,
         //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
         scaleBeginAtZero : false,
         //Boolean - Whether grid lines are shown across the chart
@@ -314,4 +312,70 @@
         });
       }
     }, {offset: '100%'});
-// End Bar Graphs
+// End Bar Charts
+
+// Line Charts
+
+  // Line Chart Empty
+  var lineEmpty = {
+    labels: ["Jan","", "Feb","", "Mar","", "Apr","", "May","", "Jun","", "Jul","", "Aug","", "Sept","", "Oct","", "Nov","", "Dec","", ""],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        }
+    ]
+  };
+
+  // Line Chart Portfolio
+  var lineData = {
+    labels: ["Jan","", "Feb","", "Mar","", "Apr","", "May","", "Jun","", "Jul","", "Aug","", "Sept","", "Oct","", "Nov","", "Dec","", ""],
+    datasets: [
+        {
+            label: "My First dataset",
+            fillColor: "rgba(151,187,205,0.2)",
+            strokeColor: "rgba(151,187,205,1)",
+            pointColor: "rgba(151,187,205,1)",
+            pointStrokeColor: "#fff",
+            pointHighlightFill: "#fff",
+            pointHighlightStroke: "rgba(151,187,205,1)",
+            data: [16572, 16378, 15698, 16018, 16322, 16106, 16458, 16173, 16580, 16614, 16717, 16766, 16829, 17055, 16562, 16717, 17097, 16989, 17040, 16313, 17391, 17632, 17827, 17286, 17988]
+        }
+    ]
+  };
+
+  $('#linechart').waypoint(function(direction) {
+    if (direction == 'down') {
+      var linechart = document.getElementById("linechart").getContext("2d");
+      new Chart(linechart).Line(lineData, {
+        // Boolean - whether or not the chart should be responsive and resize when the browser does.
+        responsive: true,
+        // Number - Number of animation steps
+        animationSteps: 100,
+        // String - Animation easing effect
+        animationEasing: "easeOutQuart",
+        // Boolean - Determines whether to draw tooltips on the canvas or not
+        showTooltips: false,
+        //Boolean - Whether the line is curved between points
+        bezierCurve : false,
+      });
+    }
+  }, {offset: '75%'});
+
+  $('#linechart').waypoint(function(direction) {
+    if (direction == "up") {
+      var linechart = document.getElementById("linechart").getContext("2d");
+      new Chart(linechart).Line(lineEmpty, {
+        // Boolean - Determines whether to draw tooltips on the canvas or not
+        showTooltips: false,
+        //scaleOverride for barData
+        scaleOverride: true, scaleStartValue: 15000, scaleStepWidth: 500, scaleSteps: 6
+      });
+    }
+  }, {offset: '100%'});
