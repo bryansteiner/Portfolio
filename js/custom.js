@@ -291,27 +291,41 @@
         animationSteps: 100,
         // String - Animation easing effect
         animationEasing: "easeOutQuart",
-        //Boolean - Whether the scale should start at zero, or an order of magnitude down from the lowest value
-        scaleBeginAtZero : false,
+        // Boolean - If we want to override with a hard coded scale
+        scaleOverride: true,
+        // ** Required if scaleOverride is true **
+        // Number - The number of steps in a hard coded scale
+        scaleSteps: 6,
+        // Number - The value jump in the hard coded scale
+        scaleStepWidth: 1,
+        // Number - The scale starting value
+        scaleStartValue: 22,
         //Boolean - Whether grid lines are shown across the chart
         scaleShowGridLines : false,
         //Number - Spacing between each of the X value sets
-        barValueSpacing : 10
+        barValueSpacing : 12.5
       });
     }
   }, {offset: '75%'});
 
   $('#barchart').waypoint(function(direction) {
-      if (direction == "up") {
-        var barchart = document.getElementById("barchart").getContext("2d");
-        new Chart(barchart).Bar(barEmpty, {
-          //Boolean - Whether grid lines are shown across the chart
-          scaleShowGridLines : false,
-          //scaleOverride for barData
-          scaleOverride: true, scaleStartValue: 24, scaleStepWidth: 1, scaleSteps: 4
-        });
-      }
-    }, {offset: '100%'});
+    if (direction == "up") {
+      var barchart = document.getElementById("barchart").getContext("2d");
+      new Chart(barchart).Bar(barEmpty, {
+        // Boolean - If we want to override with a hard coded scale
+        scaleOverride: true,
+        // ** Required if scaleOverride is true **
+        // Number - The number of steps in a hard coded scale
+        scaleSteps: 6,
+        // Number - The value jump in the hard coded scale
+        scaleStepWidth: 1,
+        // Number - The scale starting value
+        scaleStartValue: 22,
+        //Boolean - Whether grid lines are shown across the chart
+        scaleShowGridLines : false,
+      });
+    }
+  }, {offset: '100%'});
 // End Bar Charts
 
 // Line Charts
@@ -360,6 +374,15 @@
         animationSteps: 100,
         // String - Animation easing effect
         animationEasing: "easeOutQuart",
+        // Boolean - If we want to override with a hard coded scale
+        scaleOverride: true,
+        // ** Required if scaleOverride is true **
+        // Number - The number of steps in a hard coded scale
+        scaleSteps: 6,
+        // Number - The value jump in the hard coded scale
+        scaleStepWidth: 500,
+        // Number - The scale starting value
+        scaleStartValue: 15000,
         // Boolean - Determines whether to draw tooltips on the canvas or not
         showTooltips: false,
         //Boolean - Whether the line is curved between points
@@ -372,10 +395,17 @@
     if (direction == "up") {
       var linechart = document.getElementById("linechart").getContext("2d");
       new Chart(linechart).Line(lineEmpty, {
+        // Boolean - If we want to override with a hard coded scale
+        scaleOverride: true,
+        // ** Required if scaleOverride is true **
+        // Number - The number of steps in a hard coded scale
+        scaleSteps: 6,
+        // Number - The value jump in the hard coded scale
+        scaleStepWidth: 500,
+        // Number - The scale starting value
+        scaleStartValue: 15000,
         // Boolean - Determines whether to draw tooltips on the canvas or not
         showTooltips: false,
-        //scaleOverride for barData
-        scaleOverride: true, scaleStartValue: 15000, scaleStepWidth: 500, scaleSteps: 6
       });
     }
   }, {offset: '100%'});
