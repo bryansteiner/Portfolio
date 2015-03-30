@@ -1,10 +1,8 @@
 /*Media Queries*/
 @media (max-width: 768px) {
-
 }
 
 @media (min-width: 768px) and (max-width: 992px) { 
-
 }
 
 @media (min-width: 992px) {
@@ -24,7 +22,7 @@ canvas {
 
 canvas.shift {
     position: relative;
-    left: -10px;
+    left: 0px;
 }
 
 .left {
@@ -36,39 +34,6 @@ canvas.shift {
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-
-.logo {
-    --ms-transform: scale(0.75,0.75); /* IE 9 */
-    -webkit-transform: scale(0.75,0.75); /* Safari */
-    transform: scale(0.75,0.75);
-    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
-    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.logo:hover {
-    --ms-transform: scale(0.95,0.95); /* IE 9 */
-    -webkit-transform: scale(0.95,0.95); /* Safari */
-    transform: scale(0.95,0.95);
-    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
-    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.laptop {
-    --ms-transform: scale(0.95,0.95); /* IE 9 */
-    -webkit-transform: scale(0.95,0.95); /* Safari */
-    transform: scale(0.95,0.95);
-    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
-    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-}
-
-.laptop:hover {
-    --ms-transform: scale(1,1); /* IE 9 */
-    -webkit-transform: scale(1,1); /* Safari */
-    transform: scale(1,1);
-    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
-    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .btn {
@@ -91,16 +56,28 @@ canvas.shift {
 a.btn-scroll:hover, a.btn-social:hover {
     background-color: #e6e6e6;
 }
-
-.normal {
-    color: #000;
-}
 /*End All Pages*/
 
 /*Main Page*/
 .main {
     padding-top: 75px;
     padding-bottom: 75px;
+}
+
+.logo {
+    --ms-transform: scale(0.85,0.85); /* IE 9 */
+    -webkit-transform: scale(0.85,0.85); /* Safari */
+    transform: scale(0.85,0.85);
+    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
+    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.logo:hover {
+    --ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1);
+    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
+    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 /*End Main Page*/
 
@@ -109,12 +86,39 @@ a.btn-scroll:hover, a.btn-social:hover {
     padding-top: 75px;
     padding-bottom: 75px;
 }
+
+.about p {
+    text-indent: 40px;
+    font-size: 18px;
+}
 /*End About Page*/
 
 /*Portfolio Page*/
 .portfolio {
     padding-top: 75px;
     padding-bottom: 75px;
+}
+
+.portfolio p {
+    text-indent: 40px;
+    font-size: 16px;
+}
+
+.laptop {
+    --ms-transform: scale(0.95,0.95); /* IE 9 */
+    -webkit-transform: scale(0.95,0.95); /* Safari */
+    transform: scale(0.95,0.95);
+    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
+    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.laptop:hover {
+    --ms-transform: scale(1,1); /* IE 9 */
+    -webkit-transform: scale(1,1); /* Safari */
+    transform: scale(1,1);
+    -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Safari */
+    transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 /*End Portfolio Page*/
 
@@ -129,5 +133,9 @@ a.btn-scroll:hover, a.btn-social:hover {
 .bottom {
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.normal {
+    color: #000;
 }
 /*End Bottom Page
