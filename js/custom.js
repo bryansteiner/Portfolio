@@ -82,7 +82,7 @@
   });
 // End Portfolio Button Smooth Scroll
 
-// Bottom Button Smooth Scroll
+// Contact Button Smooth Scroll
   $("#bottom a[href^='#']").on('click', function(e) {
 
     // prevent default anchor click behavior
@@ -121,20 +121,14 @@
     {
         value: 300,
         color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
     },
     {
         value: 50,
         color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
     },
     {
         value: 100,
         color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
     }
   ]
 
@@ -149,7 +143,11 @@
         //String - Animation easing effect
         animationEasing : "easeOutQuart",
         // Boolean - Determines whether to draw tooltips on the canvas or not
-        showTooltips: false
+        showTooltips: false,
+        //String - The colour of each segment stroke
+        segmentStrokeColor : "#FFFFFF",
+        //Number - The width of each segment stroke
+        segmentStrokeWidth : 3,
       });
     }
   }, {offset: '50%'});
@@ -166,20 +164,14 @@
     {
         value: 300,
         color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
     },
     {
         value: 50,
         color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
     },
     {
         value: 100,
         color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
     }
   ]
 
@@ -194,7 +186,11 @@
         //String - Animation easing effect
         animationEasing : "easeOutQuart",
         // Boolean - Determines whether to draw tooltips on the canvas or not
-        showTooltips: false
+        showTooltips: false,
+        //String - The colour of each segment stroke
+        segmentStrokeColor : "#515151",
+        //Number - The width of each segment stroke
+        segmentStrokeWidth : 3,
       });
     }
   }, {offset: '50%'});
@@ -210,21 +206,15 @@
   var pieData3 = [
     {
         value: 300,
-        color:"#F7464A",
-        highlight: "#FF5A5E",
-        label: "Red"
+        color:"#F7464A"
     },
     {
         value: 50,
-        color: "#46BFBD",
-        highlight: "#5AD3D1",
-        label: "Green"
+        color: "#46BFBD"
     },
     {
         value: 100,
-        color: "#FDB45C",
-        highlight: "#FFC870",
-        label: "Yellow"
+        color: "#FDB45C"
     }
   ]
 
@@ -240,6 +230,10 @@
         animationEasing : "easeOutQuart",
         // Boolean - Determines whether to draw tooltips on the canvas or not
         showTooltips: false,
+        //String - The colour of each segment stroke
+        segmentStrokeColor : "#EEEEEE",
+        //Number - The width of each segment stroke
+        segmentStrokeWidth : 3,
       });
     }
   }, {offset: '50%'});
@@ -291,6 +285,10 @@
         animationSteps: 100,
         // String - Animation easing effect
         animationEasing: "easeOutQuart",
+        // String - Colour of the scale line
+        scaleLineColor: "#FFFFFF",
+        // String - Scale label font colour
+        scaleFontColor: "#FFFFFF",
         // Boolean - If we want to override with a hard coded scale
         scaleOverride: true,
         // ** Required if scaleOverride is true **
@@ -312,6 +310,10 @@
     if (direction == "up") {
       var barchart = document.getElementById("barchart").getContext("2d");
       new Chart(barchart).Bar(barEmpty, {
+        // String - Colour of the scale line
+        scaleLineColor: "#FFFFFF",
+        // String - Scale label font colour
+        scaleFontColor: "#FFFFFF",
         // Boolean - If we want to override with a hard coded scale
         scaleOverride: true,
         // ** Required if scaleOverride is true **
@@ -359,7 +361,7 @@
             pointStrokeColor: "#fff",
             pointHighlightFill: "#fff",
             pointHighlightStroke: "rgba(151,187,205,1)",
-            data: [16572, 16378, 15698, 16018, 16322, 16106, 16458, 16173, 16580, 16614, 16717, 16766, 16829, 17055, 16562, 16717, 17097, 16989, 17040, 16313, 17391, 17632, 17827, 17286, 17988]
+            data: [1832, 1848, 1742, 1839, 1846, 1859, 1886, 1843, 1884, 1871, 1925, 1938, 1973, 1982, 1925, 1955, 2002, 1984, 1946, 1862, 2018, 2041, 2053, 1990, 2058]
         }
     ]
   };
@@ -376,13 +378,17 @@
         animationEasing: "easeOutQuart",
         // Boolean - If we want to override with a hard coded scale
         scaleOverride: true,
+        // String - Colour of the scale line
+        scaleLineColor: "#FFFFFF",
+        // String - Scale label font colour
+        scaleFontColor: "#FFFFFF",
         // ** Required if scaleOverride is true **
         // Number - The number of steps in a hard coded scale
-        scaleSteps: 6,
+        scaleSteps: 8,
         // Number - The value jump in the hard coded scale
-        scaleStepWidth: 500,
+        scaleStepWidth: 50,
         // Number - The scale starting value
-        scaleStartValue: 15000,
+        scaleStartValue: 1700,
         // Boolean - Determines whether to draw tooltips on the canvas or not
         showTooltips: false,
         //Boolean - Whether the line is curved between points
@@ -395,6 +401,10 @@
     if (direction == "up") {
       var linechart = document.getElementById("linechart").getContext("2d");
       new Chart(linechart).Line(lineEmpty, {
+        // String - Colour of the scale line
+        scaleLineColor: "#FFFFFF",
+        // String - Scale label font colour
+        scaleFontColor: "#FFFFFF",
         // Boolean - If we want to override with a hard coded scale
         scaleOverride: true,
         // ** Required if scaleOverride is true **

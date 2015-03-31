@@ -11,6 +11,7 @@
 	    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	    <!-- Custom -->
+	    <link href="css/animation.css" rel="stylesheet">
 	    <link href="css/custom.css" rel="stylesheet">
 	    <!-- Title -->
 	    <title>Bryan Steiner</title>
@@ -48,8 +49,8 @@
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
-					<img class="img-responsive center logo" src="imgs/logo.png" alt="...">
+				<div class="col-xs-offset-0 col-xs-12 col-sm-offset-0 col-sm-12 col-md-offset-0 col-md-12">
+					<i class="fa fa-database fa-3x"></i>
 				</div>
 			</div>
 			<div class="row">
@@ -59,7 +60,7 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6"> 
-					<a class="btn btn-scroll" href="#about" role="button"><i class="fa fa-chevron-down"></i></span></a>
+					<a class="btn btn-scroll btn-main" href="#about" role="button"><i class="fa fa-chevron-down"></i></span></a>
 				</div>
 			</div>
 		</div>
@@ -94,12 +95,12 @@
 			</div>
 			<div class="row">	
 				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">	
-					<a class="btn btn-default" href="pdfs/resume.pdf" download="" role="button"><i class="fa fa-file-pdf-o"></i></span> Download Resume</a>
+					<a class="btn btn-about" href="pdfs/resume.pdf" download="" role="button"><i class="fa fa-file-pdf-o"></i></span> Download Resume</a>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6"> 
-					<a class="btn btn-scroll" href="#portfolio" role="button"><i class="fa fa-chevron-down"></i></a>
+					<a class="btn btn-scroll btn-about" href="#portfolio" role="button"><i class="fa fa-chevron-down"></i></a>
 				</div>
 			</div>
 		</div>
@@ -107,59 +108,61 @@
 
 		<!-- Portfolio Page -->
 		<div id="portfolio" class="container-fluid portfolio">
-			<div class="row">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
-					<canvas id="piechart2"  width="125" height="125"></canvas>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
-					<div class="page-header">
-						<h1>My Portfolio</h1>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+						<canvas id="piechart2"  width="125" height="125"></canvas>
 					</div>
 				</div>
-			</div>
-			<div class="row left">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5">
-					<p>
-						I like to combine my knowledge of statistics with my passion for NBA basketball. As a member and data coordinator of the sports statistics club at my school, I frequently analyze the performance of individual players and teams to arrive at new conclusions. From this process, I hope to gain a deeper understanding of the game itself.
-					</p>
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-10 col-md-offset-1 col-md-10">
+						<div class="page-header">
+							<h1>My Portfolio</h1>
+						</div>
+					</div>
 				</div>
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5 col-md-offset-0 col-md-5">
-					<p class="center">2013-14 NBA League Leaders in PPG</p>
-					<canvas id="barchart"></canvas>
+				<div class="row left">
+					<div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-1 col-md-5">
+						<p>
+							I like to combine my knowledge of statistics with my passion for NBA basketball. As a member and data coordinator of the sports statistics club at my school, I frequently analyze the performance of individual players and teams to arrive at new and interseting conclusions. From this process, I've developed a deeper and analytical understanding of the game.
+						</p>
+					</div>
+					<div class="col-xs-offset-0 col-xs-11 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-5">
+						<p class="center">2013-14 NBA League Leaders in PPG</p>
+						<canvas id="barchart"></canvas>
+					</div>
 				</div>
-			</div>
-			<div class="row left">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5 col-sm-push-5 col-md-offset-0 col-md-5 col-md-push-6">
-					<p>
-						I also manage my own stock portfolio. I like to observe and understand the underlying movements affecting financial markets.
-					</p>
-					<p>
-						I mostly trade ETFs. I am a big fan of the market exposure they provide versus trading individual stocks. I also particularly like to follow the exciting developments emerging from the biotech industry. I hope to tap into some of this future potential.
-					</p>
+				<div class="row left">
+					<div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-1 col-md-5">
+						<p>
+							I also manage my own stock portfolio. I like to observe and understand the underlying movements affecting financial markets.
+						</p>
+						<p>
+							I mostly trade ETFs. I am a big fan of the market exposure they provide versus trading individual stocks. I also particularly like to follow the exciting developments emerging from the biotech industry. I hope to tap into some of this future potential.
+						</p>
+					</div>
+					<div class="col-xs-offset-0 col-xs-11 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-5">
+						<p class="center">S&P 500 Performance 2014</p>
+						<canvas id="linechart"></canvas>
+					</div>
 				</div>
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5 col-sm-pull-5 col-md-offset-0 col-md-5 col-md-pull-4">
-					<p class="center">Dow Jones Industrial Average 2014</p>
-					<canvas id="linechart"></canvas>
+				<div class="row left">
+					<div class="col-xs-offset-0 col-xs-12 col-sm-offset-2 col-sm-8 col-md-offset-1 col-md-5">
+						<p>
+							Some of my skills include the ability to develop and design whole websites. I developed this site using a top-down design and a minimalist approach. I believe organized design clears the mind for deeper thinking. I am proficient in HTML, CSS, and Javascript.
+						</p>
+						<p>
+							In addition, I am also proficient with statistical software (R and SAS) as well as Microsoft Word, Excel, and Powerpoint. 
+						</p>
+					</div>
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-0 col-md-5">
+						<img class="img-responsive center laptop" src="imgs/macbook.png" alt="...">
+					</div>
 				</div>
-			</div>
-			<div class="row left">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-1 col-sm-5 col-md-offset-1 col-md-5">
-					<p>
-						Some of my skills include the ability to develop and design whole websites. I developed this site using a top-down design and a minimalist approach. I believe organized design clears the mind for deeper thinking. I am proficient in HTML, CSS, and Javascript.
-					</p>
-					<p>
-						In addition, I am also proficient with statistical software (R and SAS) as well as Microsoft Word, Excel, and Powerpoint. 
-					</p>
-				</div>
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-0 col-sm-5 col-md-offset-0 col-md-5">
-					<img class="img-responsive center laptop" src="imgs/macbook.png" alt="...">
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6"> 
-					<a class="btn btn-scroll" href="#contact" role="button"><i class="fa fa-chevron-down"></i></a>
+				<div class="row">
+					<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6"> 
+						<a class="btn btn-scroll btn-portfolio" href="#contact" role="button"><i class="fa fa-chevron-down"></i></a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -197,17 +200,22 @@
 						<div class="form-group">
 							<textarea type="message" class="form-control" id="InputMessage" placeholder="Message" rows="5"></textarea>
 						</div>
-						<button type="submit" class="btn btn-default center" href="#contact">Submit</button>
+						
 					</form>
 				</div>
 			</div>
 			<div class="row">
+				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-3 col-md-6">
+					<a type="submit" class="btn btn-contact" href="#contact">Submit</a>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-					<a class="btn btn-social" href="https://www.linkedin.com/in/steinerbryan" role="button" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
-					<a class="btn btn-social" href="https://www.facebook.com/steiner.bryan?fref=browse_search" role="button" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
-					<a class="btn btn-social" href="https://instagram.com/bry_steiner/" role="button" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
-					<a class="btn btn-social" href="https://twitter.com/bry_steiner" role="button" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
-					<a class="btn btn-social" href="https://github.com/bryansteiner" role="button" target="_blank"><i class="fa fa-github fa-lg"></i></a>
+					<a class="btn btn-social btn-contact" href="https://www.linkedin.com/in/steinerbryan" role="button" target="_blank"><i class="fa fa-linkedin fa-lg"></i></a>
+					<a class="btn btn-social btn-contact" href="https://www.facebook.com/steiner.bryan?fref=browse_search" role="button" target="_blank"><i class="fa fa-facebook fa-lg"></i></a>
+					<a class="btn btn-social btn-contact" href="https://instagram.com/bry_steiner/" role="button" target="_blank"><i class="fa fa-instagram fa-lg"></i></a>
+					<a class="btn btn-social btn-contact" href="https://twitter.com/bry_steiner" role="button" target="_blank"><i class="fa fa-twitter fa-lg"></i></a>
+					<a class="btn btn-social btn-contact" href="https://github.com/bryansteiner" role="button" target="_blank"><i class="fa fa-github fa-lg"></i></a>
 				</div>
 			</div>
 		</div>
@@ -217,17 +225,12 @@
 		<div id="bottom" class="container-fluid bottom">
 			<div class="row">
 				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-					<a class="normal" href="#main">Back to Top <i class="fa fa-arrow-circle-up"></i></span></a>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
 					<p>Copyright <i class="fa fa-copyright"></i> Bryan Steiner 2015</p>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-xs-offset-1 col-xs-10 col-sm-offset-2 col-sm-8 col-md-offset-4 col-md-4">
-					<p><i class="fa fa-html5 fa-lg" data-toggle="tooltip" data-placement="top" title="Powered By HTML5"></i> <i class="fa fa-css3 fa-lg" data-toggle="tooltip" data-placement="top" title="Powered By CSS3"></i></p>
+					<a class="normal" href="#main">Back to Top <i class="fa fa-arrow-circle-up"></i></span></a>
 				</div>
 			</div>
 		</div>
