@@ -150,7 +150,7 @@
         segmentStrokeWidth : 3,
       });
     }
-  }, {offset: '60%'});
+  }, {offset: '50%'});
 
   $('#piechart1').waypoint(function(direction) {
     if (direction == "up") {
@@ -193,7 +193,7 @@
         segmentStrokeWidth : 3,
       });
     }
-  }, {offset: '60%'});
+  }, {offset: '50%'});
 
   $('#piechart2').waypoint(function(direction) {
     if (direction == "up") {
@@ -236,7 +236,7 @@
         segmentStrokeWidth : 3,
       });
     }
-  }, {offset: '60%'});
+  }, {offset: '50%'});
   
   $('#piechart3').waypoint(function(direction) {
     if (direction == "up") {
