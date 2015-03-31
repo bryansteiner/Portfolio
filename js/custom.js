@@ -150,7 +150,7 @@
         segmentStrokeWidth : 3,
       });
     }
-  }, {offset: '50%'});
+  }, {offset: '60%'});
 
   $('#piechart1').waypoint(function(direction) {
     if (direction == "up") {
@@ -193,7 +193,7 @@
         segmentStrokeWidth : 3,
       });
     }
-  }, {offset: '50%'});
+  }, {offset: '60%'});
 
   $('#piechart2').waypoint(function(direction) {
     if (direction == "up") {
@@ -236,7 +236,7 @@
         segmentStrokeWidth : 3,
       });
     }
-  }, {offset: '50%'});
+  }, {offset: '60%'});
   
   $('#piechart3').waypoint(function(direction) {
     if (direction == "up") {
@@ -249,28 +249,28 @@
 // Bar Charts
   // Bar Chart Empty
   var barEmpty = {
-    labels : ["K. Love","L. James","C. Anthony","K. Durant"],
+    labels : ["L. James","J. Harden","S. Curry","R. Westbrook","A. Davis"],
     datasets : [
       {
         fillColor : "rgba(220,220,220,0.5)",
         strokeColor : "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data : [0, 0, 0, 0]
+        data : [0, 0, 0, 0, 0]
       }
     ]
   }
 
   // Bar Chart Portfolio
   var barData = {
-    labels : ["K. Love","L. James","C. Anthony","K. Durant"],
+    labels : ["L. James","J. Harden","S. Curry","R. Westbrook","A. Davis"],
     datasets : [
       {
         fillColor : "rgba(220,220,220,0.5)",
         strokeColor : "rgba(220,220,220,0.8)",
         highlightFill: "rgba(220,220,220,0.75)",
         highlightStroke: "rgba(220,220,220,1)",
-        data : [24.6, 25.9, 27.2, 27.5]
+        data : [26.0, 26.6, 28.0, 29.3, 31.1]
       }
     ]
   }
@@ -293,15 +293,15 @@
         scaleOverride: true,
         // ** Required if scaleOverride is true **
         // Number - The number of steps in a hard coded scale
-        scaleSteps: 6,
+        scaleSteps: 4,
         // Number - The value jump in the hard coded scale
-        scaleStepWidth: 1,
+        scaleStepWidth: 2,
         // Number - The scale starting value
-        scaleStartValue: 22,
+        scaleStartValue: 24,
         //Boolean - Whether grid lines are shown across the chart
         scaleShowGridLines : false,
         //Number - Spacing between each of the X value sets
-        barValueSpacing : 12.5
+        barValueSpacing : 10
       });
     }
   }, {offset: '75%'});
@@ -318,11 +318,11 @@
         scaleOverride: true,
         // ** Required if scaleOverride is true **
         // Number - The number of steps in a hard coded scale
-        scaleSteps: 6,
+        scaleSteps: 4,
         // Number - The value jump in the hard coded scale
-        scaleStepWidth: 1,
+        scaleStepWidth: 2,
         // Number - The scale starting value
-        scaleStartValue: 22,
+        scaleStartValue: 24,
         //Boolean - Whether grid lines are shown across the chart
         scaleShowGridLines : false,
       });
@@ -409,11 +409,11 @@
         scaleOverride: true,
         // ** Required if scaleOverride is true **
         // Number - The number of steps in a hard coded scale
-        scaleSteps: 6,
+        scaleSteps: 8,
         // Number - The value jump in the hard coded scale
-        scaleStepWidth: 500,
+        scaleStepWidth: 50,
         // Number - The scale starting value
-        scaleStartValue: 15000,
+        scaleStartValue: 1700,
         // Boolean - Determines whether to draw tooltips on the canvas or not
         showTooltips: false,
       });

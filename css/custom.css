@@ -1,3 +1,18 @@
+/*Media Queries*/
+
+@media (max-width: 768px) {
+     .shift {
+        position: relative;
+        left: -20px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) { ... }
+@media (min-width: 992px) and (max-width: 1200px) { ... }
+@media (min-width: 1200px) { ... }
+
+/*End Media Queries*/
+
 /*All Pages*/
 body {
     text-align: center;
@@ -69,7 +84,6 @@ a.btn-main:hover {
 }
 
 .about p {
-    text-indent: 40px;
     margin: 0px;
     font-size: 18px;
 }
@@ -81,6 +95,7 @@ a.btn-main:hover {
 a.btn-about:link {
     border-color: #515151;
     color: #515151;
+    margin-top: 25px;
 }
 
 a.btn-about:visited {
@@ -103,13 +118,12 @@ a.btn-about:hover {
 }
 
 .portfolio p {
-    text-indent: 40px;
     margin: 0px;
     font-size: 16px;
 }
 
 .portfolio .page-header {
-    border-bottom: 1px solid #515151;
+    border-bottom: 1px solid #FFFFFF;
 }
 
 a.btn-portfolio:link {
