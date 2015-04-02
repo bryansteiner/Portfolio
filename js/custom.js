@@ -19,6 +19,28 @@
   });
 // End Navbar Smooth Scroll
 
+// Main Animation
+  var icon_value = [];
+
+  // set default positions
+  var icon_left = [];
+  var icon_top = [];
+
+  for(var i=0; i < 33; i++) {
+      icon_left[i] = 20 + 6 * (i%11);
+      icon_top[i] = 90 - 15 * Math.floor(i/11);
+  }
+
+  function moveToPlace(id) {
+      var el = document.getElementById("icon_" + id);
+      el.style["left"] = icon_left[id] + "%";
+      el.style["top"] = icon_top[id] + "%";
+  }
+
+  icon_value.sort(function() { return Math.round(Math.random()) - 0.5; });
+    for(i=0; i < 33; i++) setTimeout("moveToPlace(" + i + ")", i * 100);
+// End Main Animation
+
 // Main Button Smooth Scroll
   $("#main a[href^='#']").on('click', function(e) {
 

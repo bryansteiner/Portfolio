@@ -14,6 +14,7 @@
 
 /*All Pages*/
 body {
+    position: relative;
     text-align: center;
     font-family: Roboto Slab, Arial, sans-serif;
 }
@@ -56,6 +57,22 @@ canvas {
     color: #FFFFFF;
     padding-top: 75px;
     padding-bottom: 75px;
+}
+
+.animation-area {
+    height: 300px;
+}
+
+.animation-area div {
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%, -50%);
+    -webkit-transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition-delay: 1s;
 }
 
 a.btn-main:link {
@@ -141,12 +158,11 @@ a.btn-portfolio:hover {
 }
 
 .laptop {
-    --ms-transform: scale(0.95,0.95);
+     --ms-transform: scale(0.95,0.95); 
     -webkit-transform: scale(0.95,0.95);
     transform: scale(0.95,0.95);
     -webkit-transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
     transition: all 600ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
 }
 
 .laptop:hover {
@@ -164,6 +180,10 @@ a.btn-portfolio:hover {
     color: #515151;
     padding-top: 75px;
     padding-bottom: 30px;
+}
+
+.contact .page-header {
+    border-bottom: 1px solid #515151;
 }
 
 a.btn-contact:link {
