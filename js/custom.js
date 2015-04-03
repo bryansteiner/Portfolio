@@ -27,8 +27,8 @@
   var icon_top = [];
 
   for(var i=0; i < 33; i++) {
-      icon_left[i] = 20 + 6 * (i%11);
-      icon_top[i] = 90 - 15 * Math.floor(i/11);
+      icon_left[i] = 10 + 8 * (i%11);
+      icon_top[i] = 90 - 17.5 * Math.floor(i/11);
   }
 
   function moveToPlace(id) {
@@ -441,3 +441,4 @@
       });
     }
   }, {offset: '100%'});
+// End Line Charts
