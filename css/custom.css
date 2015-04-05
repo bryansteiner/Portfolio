@@ -74,6 +74,10 @@ canvas {
     text-align: left;
 }
 
+.up {
+    margin-top: 50px;
+}
+
 .center {
     text-align: center;
     display: block;
