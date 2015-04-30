@@ -1,18 +1,32 @@
 /*Media Queries*/
 @media (max-width: 768px) {
-     .shift {
-        position: relative;
-        left: -20px;
-    }
-
     .fa-database {
         -webkit-transform: scale(.85,.85); 
         transform: scale(.85,.85);
     }
+
+    .up {
+        margin-top: 25px;
+    }
+
+    .down {
+        margin-top: 25px;
+    }
 }
-@media (min-width: 768px) and (max-width: 992px) { ... }
-@media (min-width: 992px) and (max-width: 1200px) { ... }
-@media (min-width: 1200px) { ... }
+@media (min-width: 768px) and (max-width: 992px) {
+    .up {
+        margin-top: 50px;
+    }
+
+    .down {
+        margin-top: 50px;
+    }
+}
+@media (min-width: 992px) {
+    .up {
+        margin-top: 50px;
+    }
+}
 /*End Media Queries*/
 
 /*Navbar*/
@@ -65,17 +79,8 @@ body {
     font-family: Roboto Slab, Arial, sans-serif;
 }
 
-canvas {
-    padding: 0px;
-    margin: 0px;
-}
-
 .left {
     text-align: left;
-}
-
-.up {
-    margin-top: 50px;
 }
 
 .center {
@@ -159,7 +164,7 @@ a.btn-main:hover {
 .about p {
     margin: 0px;
     font-size: 18px;
-    text-indent: 25px;
+    text-indent: 35px;
 }
 
 .about .page-header {
@@ -202,7 +207,7 @@ a.btn-about:hover {
 .portfolio p {
     margin: 0px;
     font-size: 16px;
-    text-indent: 25px;
+    text-indent: 35px;
 }
 
 .portfolio .page-header {
