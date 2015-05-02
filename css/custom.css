@@ -32,6 +32,7 @@
 /*Navbar*/
 .navbar {
     opacity: 1.0;
+    border: 0px;
 }
 
 .navbar-inverse .navbar-nav>li>a {
