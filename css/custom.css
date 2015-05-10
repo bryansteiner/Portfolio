@@ -1,8 +1,12 @@
 /*Media Queries*/
 @media (max-width: 768px) {
     .fa-database {
-        -webkit-transform: scale(.85,.85); 
-        transform: scale(.85,.85);
+        -webkit-transform: scale(.75,.75); 
+        transform: scale(.75,.75);
+    }
+
+    .animation-area {
+        height: 225px;
     }
 
     .up {
@@ -14,6 +18,10 @@
     }
 }
 @media (min-width: 768px) and (max-width: 992px) {
+    .animation-area {
+        height: 275px;
+    }
+
     .up {
         margin-top: 50px;
     }
@@ -23,6 +31,9 @@
     }
 }
 @media (min-width: 992px) {
+    .animation-area {
+        height: 275px;
+    }
     .up {
         margin-top: 50px;
     }
@@ -113,10 +124,6 @@ body {
     color: #FFFFFF;
     padding-top: 75px;
     padding-bottom: 75px;
-}
-
-.animation-area {
-    height: 275px;
 }
 
 .animation-area div {
