@@ -1,11 +1,11 @@
 <?php
 /* Set e-mail recipient */
-$myemail = "tudor.anghelina@gmail.com";
+$myemail = "steiner.bs@gmail.com";
 
 /* Check all form inputs using check_input function */
 $name = check_input($_POST['inputName'], "Your Name");
-$email = check_input($_POST['inputEmail'], "Your E-mail Address");
-$subject = check_input($_POST['inputSubject'], "Message Subject");
+$email = check_input($_POST['inputEmail'], "Your E-mail");
+$subject = check_input($_POST['inputSubject'], "Your Subject");
 $message = check_input($_POST['inputMessage'], "Your Message");
 
 /* If e-mail is not valid show error message */
@@ -19,7 +19,7 @@ $subject = "Someone has sent you a message";
 
 $message = "
 
-Someone has sent you a message using your contac form:
+Someone has sent you a message using your contact form:
 
 Name: $name
 Email: $email
@@ -34,7 +34,7 @@ $message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: http://address-of-confirmation-page.html');
+header('Location: http://contact.html');
 exit();
 
 /* Functions we used */
