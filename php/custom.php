@@ -1,11 +1,12 @@
 <?php
 /* Set e-mail recipient */
-$myemail = "steiner.bs@gmail.com";
+$myemail = "tudor.anghelina@gmail.com";
 
 /* Check all form inputs using check_input function */
-$name = check_input($_POST['InputName'], "Your Name");
-$email = check_input($_POST['InputEmail'], "Your E-mail Address");
-$message = check_input($_POST['InputMessage'], "Your Message");
+$name = check_input($_POST['inputName'], "Your Name");
+$email = check_input($_POST['inputEmail'], "Your E-mail Address");
+$subject = check_input($_POST['inputSubject'], "Message Subject");
+$message = check_input($_POST['inputMessage'], "Your Message");
 
 /* If e-mail is not valid show error message */
 if (!preg_match("/([\w\-]+\@[\w\-]+\.[\w\-]+)/", $email))
@@ -14,12 +15,15 @@ show_error("Invalid e-mail address");
 }
 /* Let's prepare the message for the e-mail */
 
+$subject = "Someone has sent you a message";
+
 $message = "
 
 Someone has sent you a message using your contac form:
 
 Name: $name
 Email: $email
+Subject: $subject
 
 Message:
 $message
@@ -27,7 +31,7 @@ $message
 ";
 
 /* Send the message using mail() function */
-mail($myemail, $message);
+mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
 header('Location: http://address-of-confirmation-page.html');
