@@ -34,7 +34,7 @@ $message
 mail($myemail, $subject, $message);
 
 /* Redirect visitor to the thank you page */
-header('Location: http://contact.html');
+header('Location: http://address-of-confirmation-page.html');
 exit();
 
 /* Functions we used */
