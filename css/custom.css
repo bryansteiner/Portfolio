@@ -272,6 +272,11 @@ a.btn-portfolio:hover {
     border-bottom: 1px solid #515151;
 }
 
+#wuf-adv {
+    margin-top: -20px;
+    margin-bottom: -10px;
+}
+
 a.btn-contact:link {
     border-color: #515151;
     color: #515151;
